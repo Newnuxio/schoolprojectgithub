@@ -115,6 +115,16 @@ $conn->close();
             border-color: #218838 !important;
             color: #fff !important;
         }
+        .btn-info {
+            background: #17a2b8 !important;
+            border-color: #17a2b8 !important;
+            color: #fff !important;
+        }
+        .btn-info:hover {
+            background: #138496 !important;
+            border-color: #138496 !important;
+            color: #fff !important;
+        }
     </style>
 </head>
 <body>
@@ -157,6 +167,11 @@ $conn->close();
                             <button type="submit" name="change_password" class="btn btn-primary">Wijzig wachtwoord</button>
                         </div>
                     </form>
+                    <div class="d-grid mb-2">
+                        <a href="export_logs.php" class="btn btn-info" target="_blank">
+                            📄 Exporteer Activiteiten naar PDF
+                        </a>
+                    </div>
                     <form method="post" action="delete_account.php" onsubmit="return confirm('Weet je zeker dat je je account wilt verwijderen? Dit kan niet ongedaan worden gemaakt.');">
                         <div class="d-grid mb-2">
                             <button type="submit" name="delete_account" class="btn btn-danger">Verwijder account</button>
